@@ -14,6 +14,38 @@ fi
 ```
 
 # vimrc
+install fonts for powerline - https://github.com/powerline/font
+install fonts for terminal - D2coding
+setup terminal font
+```
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+```
 
+flake install for syntax check
+```
+sudo pip3 install flake8
+```
+
+using vundle
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
+```
+
+.vimrc configuration - solarized theme(dracula is bad), python syntax check, nerdtree, python autocomplete
+ws10
+```
+
+```
+
+install package
+'''
+:Plugin Install
+'''
 
 # bashrc for cuda
