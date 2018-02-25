@@ -136,7 +136,7 @@ set sw=4
 
 install package
 '''
-:Plugin Install
+:PluginInstall
 '''
 
 # bashrc for cuda
