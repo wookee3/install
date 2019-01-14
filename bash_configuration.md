@@ -1,4 +1,4 @@
-# color prompt setting
+# bashrc for color prompt setting
 ```
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -11,6 +11,19 @@ if [ "$color_prompt" = yes ]; then
 else
   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(parse_git_branch)\$ '
 fi
+```
+
+# bashrc for tmux
+```
+alias tmux='TERM=xterm-256color tmux -2'
+```
+
+# bashrc for cuda
+environment variables for cuda
+```
+export CUDA_HOME=/usr/local/cuda
+export PATH=$PATH:$CUDA_HOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/$CUDA_HOME/lib64
 ```
 
 # vimrc
@@ -138,11 +151,3 @@ install package
 '''
 :PluginInstall
 '''
-
-# bashrc for cuda
-environment variables for cuda
-```
-export CUDA_HOME=/usr/local/cuda
-export PATH=$PATH:$CUDA_HOME/bin
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/$CUDA_HOME/lib64
-```
