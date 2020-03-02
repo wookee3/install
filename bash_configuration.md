@@ -73,6 +73,7 @@ Bundle 'vim-syntastic/syntastic'
 Bundle 'nvie/vim-flake8'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'davidhalter/jedi-vim'
+BUndle 'RRethy/vim-illuminate'
 Plugin 'tmhedberg/simpylfold'
 
 call vundle#end()
@@ -86,6 +87,7 @@ colorscheme solarized
 " powerline setting
 set laststatus=2
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extension#tabline#fnamemod=':t'
 set guifont=Inconsolata\ for\ Powerline:h15
 let g:Powerline_symbols='fancy'
 set fillchars+=stl:\ ,stlnc:\ 
@@ -108,7 +110,7 @@ let g:ctrlp_custom_ignore={
   \ }
 map <F2> :CtrlP<CR>
 
-" python autocomplete and syntax check
+" indent guide
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
@@ -118,13 +120,16 @@ hi IndentGuidesEven ctermbg=LightGray
 
 " python syntax check
 " vim8 or neovim can use async plugin - will be changed in future
+" vim-flake
+let g:flake8_show_in_file=1
+" syntastic
 let g:syntastic_python_checkers=['flake8']
 let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=0
 let g:syntastic_check_on_wq=1
 let g:syntastic_quiet_messages={"type":"style"}
-let g:syntastic_python_python_exec='/usr/bin/python3'
+let g:syntastic_python_python_exec='~/anaconda3/envs/python36/bin/python3'
 let python_hightlight_all=1
 
 " python autocomplete
