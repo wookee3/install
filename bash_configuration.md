@@ -75,7 +75,7 @@ Bundle 'vim-syntastic/syntastic'
 Bundle 'nvie/vim-flake8'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'davidhalter/jedi-vim'
-BUndle 'RRethy/vim-illuminate'
+Bundle 'RRethy/vim-illuminate'
 Plugin 'tmhedberg/simpylfold'
 
 call vundle#end()
