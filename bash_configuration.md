@@ -15,6 +15,9 @@ fi
 
 ```
 
+# remove conda default PS1
+conda config --set changeps1 False
+
 # bashrc for tmux
 ```
 alias tmux='TERM=xterm-256color tmux -2'
