@@ -161,3 +161,8 @@ install package
 '''
 :PluginInstall
 '''
+
+# anaconda
+```
+conda config --set changeps1 false 
+```
