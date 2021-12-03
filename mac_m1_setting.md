@@ -15,4 +15,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 ```
 # terminal 꾸미기
+# color theme - tokyo-night
+# download https://github.com/enkia/tokyo-night-vscode-theme/blob/master/tokyo-night.itermcolors
+# import and apply color theme in iterm2 - https://ooeunz.tistory.com/21
+# syntax hightlightinh
+brew install zsh-syntax-highlighting
+# put below command in .zshrc
+source /usr/local/m1-homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
