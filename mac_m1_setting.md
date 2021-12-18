@@ -26,11 +26,8 @@ source /usr/local/m1-homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlight
 
 ```
 # vim 설치
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
-
+brew install macvim
 or
-
 git clone https://github.com/vim/vim.git
 cd vim/src
 ./configure --with-features=huge --enable-python3interp
@@ -38,4 +35,19 @@ make
 sudo make install
 
 # .vimrc 설정을 기본에 내가 사용하던 것으로 수정
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
+
+```
+# node.js 설치
+# install nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/m1-homebrew/opt/nvm/nvm.sh" ] && . "/usr/local/m1-homebrew/    opt/nvm/nvm.sh"
+[ -s "/usr/local/m1-homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr    /local/m1-homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+# install node.js
+nvm install 16
+```
+
+
