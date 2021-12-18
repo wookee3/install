@@ -23,3 +23,11 @@ brew install zsh-syntax-highlighting
 # put below command in .zshrc
 source /usr/local/m1-homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
+
+```
+# vim 설치
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+
+# .vimrc 설정을 기본에 내가 사용하던 것으로 수정
+```
