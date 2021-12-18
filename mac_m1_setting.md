@@ -28,6 +28,9 @@ source /usr/local/m1-homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlight
 # vim 설치
 # xcode 설치 및 실행을 한번 해야함
 brew install macvim
+# in ~/.zshrc
+alias vim='mvim -v'
+
 or
 git clone https://github.com/vim/vim.git
 cd vim/src
@@ -51,6 +54,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # install node.js
 nvm install 16
+
+# install anaconda
+# https://github.com/conda-forge/miniforge#download
+# Download and run bash file
 ```
 
 
