@@ -42,6 +42,8 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 ```
 # node.js 설치
 # install nvm
+brew install nvm
+mkdir ~/.nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/m1-homebrew/opt/nvm/nvm.sh" ] && . "/usr/local/m1-homebrew/    opt/nvm/nvm.sh"
 [ -s "/usr/local/m1-homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr    /local/m1-homebrew/opt/nvm/etc/bash_completion.d/nvm"
