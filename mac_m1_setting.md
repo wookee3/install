@@ -26,6 +26,7 @@ source /usr/local/m1-homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlight
 
 ```
 # vim 설치
+# xcode 설치 및 실행을 한번 해야함
 brew install macvim
 or
 git clone https://github.com/vim/vim.git
