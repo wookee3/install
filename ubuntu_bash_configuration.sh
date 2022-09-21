@@ -19,5 +19,8 @@ vim +PluginInstall +qall
 # miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b
+conda init
+
+# path
 PATH=${PWD}/miniconda3:${PWD}/miniconda3/condabin:${PATH}
 echo "PATH=${PWD}/miniconda3:${PWD}/miniconda3/condabin:${PATH}" >> .bashrc
