@@ -80,6 +80,10 @@ Bundle 'nvie/vim-flake8'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'RRethy/vim-illuminate'
 Plugin 'tmhedberg/simpylfold'
+" 기본 YAML syntax / indent
+Plugin 'stephpy/vim-yaml'
+Plugin 'rottencandy/vimkubectl'
+Plugin 'andrewstuart/vim-kubernetes'
 
 call vundle#end()
 filetype plugin indent on
